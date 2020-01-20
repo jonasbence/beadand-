@@ -60,9 +60,9 @@ void loop(){
 // ha lenyomon a gombot vagy megfelelő hpmérséklet és megfelelő sötétség és megfelelő szárazság mellet locsól
  if((digitalRead(gomb)==HIGH) || (temp>15 && temp<25) && (analogRead(nedvesseg)<200) && (analogRead(fenyerzekelo)<200) ){
   digitalWrite(motor, HIGH);
-  delay(2000);
+  delay(3500);
  }else{
   digitalWrite(motor, LOW);
-  delay(1000);
+  delay(1500);
  }
 }// end loop() 
