@@ -1,2 +1,2 @@
 # beadand-
-Okos cserép locsoló rendszerrel
+Okos cserép locsoló rendszerrel (szivattyú)
