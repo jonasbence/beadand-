@@ -46,7 +46,7 @@ void loop(){
 
    int humidity = dht.readHumidity();
    int temp = dht.readTemperature();  
-//   int temp = 23;
+//   int temp = 25;
 //   int humidity = 48;
  
  int digitoneT = temp / 10;
