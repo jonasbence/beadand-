@@ -31,7 +31,7 @@ void setup(){
   
   tm1637.init();
   tm1637.set(BRIGHT_DARKEST); 
-  //BRIGHT_TYPICAL = 2,BRIGHT_DARKEST = 0,BRIGHTEST = 7;
+  //BRIGHT_TYPICAL = 2,BRIGHT_DARKEST = 0,BRIGHTEST = 8;
  
   delay(1500);//Delay to let system boot
   dht.begin();   
@@ -47,7 +47,7 @@ void loop(){
    int humidity = dht.readHumidity();
    int temp = dht.readTemperature();  
 //   int temp = 25;
-//   int humidity = 48;
+//   int humidity = 40;
  
  int digitoneT = temp / 10;
  int digittwoT = temp % 10;
@@ -58,7 +58,7 @@ void loop(){
     tm1637.display(3,12);  // put a C at the end
 
 // ha lenyomon a gombot vagy megfelelő hpmérséklet és megfelelő sötétség és megfelelő szárazság mellet locsól
- if((digitalRead(gomb)==HIGH) || (temp>15 && temp<25) && (analogRead(nedvesseg)<200) && (analogRead(fenyerzekelo)<200) ){
+ if((digitalRead(gomb)==HIGH) || (temp>17 && temp<27) && (analogRead(nedvesseg)<200) && (analogRead(fenyerzekelo)<250) ){
   digitalWrite(motor, HIGH);
   delay(3500);
  }else{
