@@ -19,10 +19,10 @@ DHT dht(DHTPIN, DHTTYPE);
 TM1637 tm1637(CLK,DIO);
 
  
-int fenyerzekelo = A1;
+int fenyerzekelo = A2;
 int motor = 6;
 int gomb = A5;
-int nedvesseg = A2;
+int nedvesseg = A1;
 void setup(){
   pinMode(gomb,INPUT_PULLUP);
   pinMode(fenyerzekelo,INPUT);
