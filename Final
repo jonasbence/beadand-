@@ -57,7 +57,7 @@ void loop(){
     tm1637.display(2,19); // put degree
     tm1637.display(3,12);  // put a C at the end
 
-// ha lenyomon a gombot vagy megfelelő hpmérséklet és megfelelő sötétség és megfelelő szárazság mellet locsól
+// ha lenyomon a gombot megfelelő hpmérséklet és megfelelő sötétség és megfelelő szárazság mellet locsól
  if((digitalRead(gomb)==HIGH) || (temp>15 && temp<25) && (analogRead(nedvesseg)<200) && (analogRead(fenyerzekelo)<200) ){
   digitalWrite(motor, HIGH);
   delay(2000);
