@@ -18,4 +18,4 @@ Ez a szoftver egy Automata rendszer szoba növények öntözéséhez készült.
 ## Szoftver:
 - Arduino IDE
 
-A beüzemeléshez szükséges információk a Wiki fül alatt a Felhasználói útmutatóban található!
+# A beüzemeléshez szükséges információk a Wiki fül alatt a Felhasználói útmutatóban található!
