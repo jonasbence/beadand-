@@ -20,5 +20,3 @@ Ez a szoftver egy Automata rendszer szoba növények öntözéséhez készült.
 
 További információ a Wiki fül alatt!
 ![Kép a projektről](Külső.jpg)
-![Kötés](Kötés.png)
-![fkötés](Kötés2.png)
