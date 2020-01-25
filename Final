@@ -1,6 +1,6 @@
 #include "TM1637.h"
 
-#include <DHT.h> 
+#include <DHT.h>
 #define DHTPIN A3
 #define DHTTYPE DHT11   
 
@@ -11,6 +11,10 @@ DHT dht(DHTPIN, DHTTYPE);
  
 TM1637 tm1637(CLK,DIO);
 
+int kivantAlso = 15;
+int kivantFelso = 25;
+int kivantFeny = 200;
+int kivantNedvesseg = 200;
  
 int fenyerzekelo = A2;
 int motor = 6;
@@ -43,7 +47,7 @@ void loop(){
     tm1637.display(3,12);  // C a végén
 
 // ha lenyomon a gombot vagy megfelelő hpmérséklet és megfelelő sötétség és megfelelő szárazság mellet locsól
- if((digitalRead(gomb)==HIGH) || (temp>15 && temp<25) && (analogRead(nedvesseg)<200) && (analogRead(fenyerzekelo)<200) ){
+ if((digitalRead(gomb)==HIGH) || (temp>kivantAlso && temp<kivantFelso) && (analogRead(nedvesseg)<kivantNedvesseg) && (analogRead(fenyerzekelo)<kivantFeny) ){
   digitalWrite(motor, HIGH);
   delay(2000);
  }else{
